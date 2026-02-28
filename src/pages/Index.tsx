@@ -8,6 +8,7 @@ import PastWorkshops from "@/components/PastWorkshops";
 import ProgramsSection from "@/components/ProgramsSection";
 import CityMeetups from "@/components/CityMeetups";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import CaseStudies from "@/components/CaseStudies";
 import FreeResources from "@/components/FreeResources";
 import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
@@ -25,6 +26,7 @@ const Index = () => {
       <PastWorkshops />
       <ProgramsSection />
       <CityMeetups />
+      <CaseStudies />
       <TestimonialsSection />
       <FreeResources />
       <PricingSection />
