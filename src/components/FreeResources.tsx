@@ -1,11 +1,49 @@
 import { motion } from "framer-motion";
-import { FileText, Zap, BarChart3, Cpu } from "lucide-react";
+import { Download, FileText, Zap, BarChart3, Cpu, BookOpen, Target, ArrowRight } from "lucide-react";
 
 const resources = [
-  { icon: FileText, title: "Prompt Libraries", description: "Battle-tested prompts for sales, marketing, content, and product development." },
-  { icon: Zap, title: "Automation Templates", description: "Ready-to-use workflows for repetitive tasks — from lead gen to customer support." },
-  { icon: BarChart3, title: "Growth Playbooks", description: "Step-by-step guides to scale your business using AI-powered strategies." },
-  { icon: Cpu, title: "AI Stack Breakdowns", description: "Curated tool recommendations by use case — so you don't waste time researching." },
+  {
+    icon: "📝",
+    count: "50+ Prompts",
+    title: "AI Prompt Library",
+    description: "Battle-tested prompts for sales, marketing, content creation, and product development.",
+    color: "from-primary/10 to-primary/5",
+  },
+  {
+    icon: "⚡",
+    count: "20+ Templates",
+    title: "Automation Templates",
+    description: "Ready-to-use workflows for lead gen, customer support, and repetitive tasks.",
+    color: "from-primary/10 to-primary/5",
+  },
+  {
+    icon: "📊",
+    count: "12 Playbooks",
+    title: "Growth Playbooks",
+    description: "Step-by-step guides to scale your business using AI-powered strategies.",
+    color: "from-primary/10 to-primary/5",
+  },
+  {
+    icon: "🔧",
+    count: "30+ Tools",
+    title: "AI Stack Breakdowns",
+    description: "Curated tool recommendations by use case — SaaS, D2C, agency, and more.",
+    color: "from-primary/10 to-primary/5",
+  },
+  {
+    icon: "🎯",
+    count: "10 Frameworks",
+    title: "MVP & Business Plan Kit",
+    description: "Frameworks to go from idea to paying customers in 60 days.",
+    color: "from-primary/10 to-primary/5",
+  },
+  {
+    icon: "📈",
+    count: "8 Case Studies",
+    title: "AI Success Stories",
+    description: "Detailed breakdowns of how founders used AI to grow revenue 3x-10x.",
+    color: "from-primary/10 to-primary/5",
+  },
 ];
 
 const FreeResources = () => {
@@ -20,28 +58,32 @@ const FreeResources = () => {
         >
           <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">Free Resources</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            Start building{" "}
-            <span className="text-gradient">before you join</span>
+            Level up your{" "}
+            <span className="text-gradient">AI journey</span>
           </h2>
-          <p className="text-muted-foreground text-lg">Access our most popular resources — completely free.</p>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Practical tools, templates, and guides — completely free. Start building before you even join.
+          </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {resources.map((r, i) => (
             <motion.div
               key={r.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="group flex items-start gap-5 bg-card border border-border rounded-2xl p-6 hover:border-primary/30 transition-colors card-shadow"
+              transition={{ delay: i * 0.08 }}
+              className="group bg-card border border-border rounded-2xl p-6 hover:border-primary/30 transition-all cursor-pointer relative overflow-hidden"
             >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
-                <r.icon size={24} className="text-primary" />
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-3xl">{r.icon}</span>
+                <span className="text-xs font-bold text-primary bg-primary/10 px-3 py-1 rounded-full">{r.count}</span>
               </div>
-              <div>
-                <h3 className="font-semibold text-lg mb-1">{r.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{r.description}</p>
+              <h3 className="font-bold text-lg mb-2">{r.title}</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed mb-4">{r.description}</p>
+              <div className="flex items-center gap-1 text-primary text-sm font-semibold group-hover:gap-2 transition-all">
+                Access Free <ArrowRight size={14} />
               </div>
             </motion.div>
           ))}

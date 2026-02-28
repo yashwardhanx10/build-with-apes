@@ -7,9 +7,10 @@ import InsideCommunity from "@/components/InsideCommunity";
 import PastWorkshops from "@/components/PastWorkshops";
 import ProgramsSection from "@/components/ProgramsSection";
 import CityMeetups from "@/components/CityMeetups";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import CaseStudies from "@/components/CaseStudies";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import FreeResources from "@/components/FreeResources";
+import NewsletterSection from "@/components/NewsletterSection";
 import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
 import CTAFooter from "@/components/CTAFooter";
@@ -29,6 +30,7 @@ const Index = () => {
       <CaseStudies />
       <TestimonialsSection />
       <FreeResources />
+      <NewsletterSection />
       <PricingSection />
       <FAQSection />
       <CTAFooter />
