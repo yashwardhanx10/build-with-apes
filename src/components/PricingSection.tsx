@@ -1,17 +1,14 @@
 import { motion } from "framer-motion";
-import { Check, Shield, Clock, Headphones, Users, Sparkles } from "lucide-react";
+import { Check, Shield, Headphones, Users, Sparkles } from "lucide-react";
 
 const features = [
-  "Access to APE Platform",
-  "Monthly Expert Workshops (Recorded)",
-  "AI Tools, Agents & Automations",
-  "Complete Resource Library",
-  "Demo Days & Pitch Access",
-  "City Meetup Invitations",
-  "Member Directory (The Gem)",
-  "APEs Launchpad Access",
-  "Co-founder & Hiring Board",
-  "APEs Newsletter & Updates",
+  "Access to APEs Platform",
+  "Live Masterclasses & Recordings",
+  "Member Directory",
+  "Community Discussions",
+  "Meetup Access",
+  "Founder Network",
+  "Event Updates",
 ];
 
 const PricingSection = () => {
@@ -28,69 +25,28 @@ const PricingSection = () => {
         >
           <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">Membership</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            Invest in your{" "}
-            <span className="text-gradient">AI future</span>
+            Choose your{" "}
+            <span className="text-gradient">membership</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-lg mx-auto">
-            Less than a coffee a day to be part of India's most action-oriented AI community.
+            Get inside India's AI-first entrepreneur community at an early member price.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {/* 5 Year Plan — Featured */}
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {/* 1 Year */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="relative bg-card border-2 border-primary rounded-3xl p-8 sm:p-10 animate-pulse-glow order-1"
+            className="bg-card border border-border rounded-3xl p-8"
           >
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-primary text-primary-foreground text-xs font-bold px-5 py-1.5 rounded-full flex items-center gap-1">
-              <Sparkles size={12} /> BEST VALUE
+            <h3 className="text-lg font-bold mb-2">1 Year Membership</h3>
+            <p className="text-muted-foreground text-sm mb-4">Perfect for members getting started with APEs.</p>
+            <div className="mb-6">
+              <span className="text-4xl font-bold">₹1,299</span>
+              <span className="text-muted-foreground text-sm ml-2">/ year</span>
             </div>
-            <h3 className="text-xl font-bold mb-2">5 Year Membership</h3>
-            <p className="text-muted-foreground text-sm mb-4">Lock in the lowest price. Build for the long term.</p>
-            <div className="flex items-baseline gap-2 mb-1">
-              <span className="text-5xl font-bold text-gradient">₹9,950</span>
-              <span className="text-muted-foreground line-through text-lg">₹39,800</span>
-            </div>
-            <p className="text-primary text-sm font-bold mb-2">Save 75% — ₹5.45/day</p>
-            <p className="text-xs text-muted-foreground mb-6">One-time payment. No recurring fees.</p>
-
-            <ul className="space-y-3 mb-8">
-              {features.map((f) => (
-                <li key={f} className="flex items-center gap-3 text-sm">
-                  <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                    <Check size={12} className="text-primary" />
-                  </div>
-                  <span>{f}</span>
-                </li>
-              ))}
-            </ul>
-            <a
-              href="https://link.lla.in/apes_5year"
-              className="block w-full text-center bg-gradient-primary text-primary-foreground font-bold py-4 rounded-full hover:opacity-90 transition-opacity text-lg"
-            >
-              Join APEs — 5 Year Access
-            </a>
-          </motion.div>
-
-          {/* 1 Year Plan */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="bg-card border border-border rounded-3xl p-8 sm:p-10 order-2"
-          >
-            <h3 className="text-xl font-bold mb-2">1 Year Membership</h3>
-            <p className="text-muted-foreground text-sm mb-4">Start building with AI today.</p>
-            <div className="flex items-baseline gap-2 mb-1">
-              <span className="text-5xl font-bold">₹3,650</span>
-              <span className="text-muted-foreground line-through text-lg">₹9,950</span>
-            </div>
-            <p className="text-primary text-sm font-bold mb-2">Save 65% — ₹10/day</p>
-            <p className="text-xs text-muted-foreground mb-6">One-time payment. No recurring fees.</p>
-
             <ul className="space-y-3 mb-8">
               {features.map((f) => (
                 <li key={f} className="flex items-center gap-3 text-sm">
@@ -103,14 +59,92 @@ const PricingSection = () => {
             </ul>
             <a
               href="https://link.lla.in/apes_1year"
-              className="block w-full text-center border-2 border-primary text-primary font-bold py-4 rounded-full hover:bg-primary/10 transition-colors text-lg"
+              className="block w-full text-center border-2 border-primary text-primary font-bold py-3.5 rounded-full hover:bg-primary/10 transition-colors"
             >
-              Join APEs — 1 Year Access
+              Join APEs — 1 Year
+            </a>
+          </motion.div>
+
+          {/* 5 Year — Featured */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="relative bg-card border-2 border-primary rounded-3xl p-8 animate-pulse-glow"
+          >
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-primary text-primary-foreground text-xs font-bold px-5 py-1.5 rounded-full flex items-center gap-1">
+              <Sparkles size={12} /> BEST VALUE
+            </div>
+            <h3 className="text-lg font-bold mb-2">5 Year Membership</h3>
+            <p className="text-muted-foreground text-sm mb-4">Best value for serious long-term builders.</p>
+            <div className="mb-6">
+              <span className="text-4xl font-bold text-gradient">₹1,499</span>
+              <span className="text-muted-foreground text-sm ml-2">/ 5 years</span>
+            </div>
+            <ul className="space-y-3 mb-8">
+              {features.map((f) => (
+                <li key={f} className="flex items-center gap-3 text-sm">
+                  <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                    <Check size={12} className="text-primary" />
+                  </div>
+                  <span>{f}</span>
+                </li>
+              ))}
+              <li className="flex items-center gap-3 text-sm">
+                <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                  <Check size={12} className="text-primary" />
+                </div>
+                <span className="text-primary font-medium">Long-term access at best price</span>
+              </li>
+            </ul>
+            <a
+              href="https://link.lla.in/apes_5year"
+              className="block w-full text-center bg-gradient-primary text-primary-foreground font-bold py-3.5 rounded-full hover:opacity-90 transition-opacity"
+            >
+              Join APEs — 5 Years
+            </a>
+          </motion.div>
+
+          {/* Lifetime */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="bg-card border border-border rounded-3xl p-8"
+          >
+            <h3 className="text-lg font-bold mb-2">Lifetime Membership</h3>
+            <p className="text-muted-foreground text-sm mb-4">One-time access for the long run.</p>
+            <div className="mb-6">
+              <span className="text-4xl font-bold">₹1,999</span>
+              <span className="text-muted-foreground text-sm ml-2">/ lifetime</span>
+            </div>
+            <ul className="space-y-3 mb-8">
+              {features.map((f) => (
+                <li key={f} className="flex items-center gap-3 text-sm">
+                  <div className="w-5 h-5 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
+                    <Check size={12} className="text-muted-foreground" />
+                  </div>
+                  <span className="text-muted-foreground">{f}</span>
+                </li>
+              ))}
+              <li className="flex items-center gap-3 text-sm">
+                <div className="w-5 h-5 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
+                  <Check size={12} className="text-muted-foreground" />
+                </div>
+                <span className="text-muted-foreground">Full lifetime access & future benefits</span>
+              </li>
+            </ul>
+            <a
+              href="https://link.lla.in/apes_lifetime"
+              className="block w-full text-center border-2 border-primary text-primary font-bold py-3.5 rounded-full hover:bg-primary/10 transition-colors"
+            >
+              Join APEs — Lifetime
             </a>
           </motion.div>
         </div>
 
-        {/* Trust */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -119,7 +153,6 @@ const PricingSection = () => {
         >
           {[
             { icon: Shield, label: "Secure Payment" },
-            { icon: Clock, label: "30-Day Money Back" },
             { icon: Headphones, label: "24/7 Support" },
             { icon: Users, label: "3,000+ Members" },
           ].map((b) => (

@@ -24,13 +24,16 @@ const NewsletterSection = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">
               Get the <span className="text-gradient">APEs Newsletter</span>
             </h2>
-            <p className="text-muted-foreground max-w-lg mx-auto mb-8">
-              Weekly AI insights, founder stories, and actionable strategies. Join 3,000+ entrepreneurs who read it every week.
+            <p className="text-muted-foreground max-w-lg mx-auto mb-2">
+              Weekly AI insights, founder stories, community updates, and practical ideas to help you build smarter.
+            </p>
+            <p className="text-muted-foreground text-sm max-w-md mx-auto mb-8">
+              Join founders and future entrepreneurs learning how to use AI in business, growth, and execution.
             </p>
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                window.open(`https://nas.io/apes`, '_blank');
+                window.open("https://nas.io/apes", "_blank");
               }}
               className="flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto"
             >
@@ -48,7 +51,6 @@ const NewsletterSection = () => {
                 Subscribe <ArrowRight size={14} />
               </button>
             </form>
-            <p className="text-xs text-muted-foreground mt-4">Free forever. No spam. Unsubscribe anytime.</p>
           </div>
         </motion.div>
       </div>

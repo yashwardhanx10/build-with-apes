@@ -11,7 +11,7 @@ const pastEvents = [
 
 const PastWorkshops = () => {
   return (
-    <section className="section-padding">
+    <section className="section-padding" id="events">
       <div className="container-tight mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,10 +21,11 @@ const PastWorkshops = () => {
         >
           <div>
             <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">Past Events</p>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-              24+ workshops.{" "}
-              <span className="text-gradient">All recorded.</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2">
+              13+ masterclasses.{" "}
+              <span className="text-gradient">Practical & recorded.</span>
             </h2>
+            <p className="text-muted-foreground text-lg">Founder-first sessions you can watch anytime.</p>
           </div>
           <a href="#pricing" className="flex items-center gap-2 text-primary font-semibold text-sm hover:underline whitespace-nowrap">
             Access all recordings <ArrowRight size={14} />

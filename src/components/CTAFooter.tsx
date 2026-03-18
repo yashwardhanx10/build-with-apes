@@ -1,36 +1,24 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
-const footerLinks = {
-  Community: [
-    { label: "Benefits", href: "#benefits" },
-    { label: "Events", href: "#events" },
-    { label: "Resources", href: "#resources" },
-    { label: "Testimonials", href: "#testimonials" },
-  ],
-  Programs: [
-    { label: "Launchpad", href: "#benefits" },
-    { label: "Demo Days", href: "#benefits" },
-    { label: "Seminars", href: "#benefits" },
-    { label: "Retreats", href: "#benefits" },
-  ],
-  Company: [
-    { label: "Pricing", href: "#pricing" },
-    { label: "FAQ", href: "#faq" },
-    { label: "Member Login", href: "https://link.lla.in/apex_login" },
-  ],
-  Social: [
-    { label: "Instagram", href: "https://instagram.com/apescommunity" },
-    { label: "Twitter", href: "https://twitter.com/apescommunity" },
-    { label: "YouTube", href: "https://youtube.com/@apescommunity" },
-    { label: "LinkedIn", href: "https://linkedin.com/company/apescommunity" },
-  ],
-};
+const footerLinks = [
+  { label: "Community", href: "#community" },
+  { label: "Benefits", href: "#benefits" },
+  { label: "Events", href: "#events" },
+  { label: "Pricing", href: "#pricing" },
+  { label: "FAQ", href: "#faq" },
+  { label: "Login", href: "https://link.lla.in/apex_login" },
+];
+
+const socialLinks = [
+  { label: "Instagram", href: "https://instagram.com/apescommunity" },
+  { label: "LinkedIn", href: "https://linkedin.com/company/apescommunity" },
+  { label: "YouTube", href: "https://youtube.com/@apescommunity" },
+];
 
 const CTAFooter = () => {
   return (
     <>
-      {/* Final CTA */}
       <section className="section-padding">
         <div className="container-tight mx-auto">
           <motion.div
@@ -43,7 +31,6 @@ const CTAFooter = () => {
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
 
             <div className="relative z-10">
-              <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">Join the Movement</p>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
                 The future belongs to{" "}
                 <span className="text-gradient">AI builders.</span>
@@ -55,7 +42,7 @@ const CTAFooter = () => {
                 href="#pricing"
                 className="inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground font-bold px-10 py-5 rounded-full text-lg hover:opacity-90 transition-all glow-border group"
               >
-                Join APEs Club
+                Join APEs
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
@@ -63,44 +50,51 @@ const CTAFooter = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-border py-16 px-4 sm:px-6 lg:px-8">
+      <footer className="border-t border-border py-12 px-4 sm:px-6 lg:px-8">
         <div className="container-tight mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-10 mb-12">
-            {/* Brand */}
-            <div className="col-span-2 md:col-span-1">
+          <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-8 mb-8">
+            <div className="text-center md:text-left">
               <img
                 src="https://i.postimg.cc/WbdqmBqy/APES-Logo-Inverted-Vector.png"
                 alt="APEs Logo"
-                className="h-10 w-auto mb-4"
+                className="h-10 w-auto mb-3 mx-auto md:mx-0"
               />
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                India's AI-First Entrepreneur Community. Building the future, one founder at a time.
+              <p className="text-muted-foreground text-sm">
+                India's AI-First Entrepreneur Community.
+                <br />
+                Building the future, one founder at a time.
               </p>
             </div>
 
-            {Object.entries(footerLinks).map(([category, links]) => (
-              <div key={category}>
-                <h4 className="font-semibold text-sm mb-4">{category}</h4>
-                <ul className="space-y-3">
-                  {links.map((link) => (
-                    <li key={link.label}>
-                      <a
-                        href={link.href}
-                        className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                      >
-                        {link.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            <div className="flex flex-wrap justify-center gap-6">
+              {footerLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+
+            <div className="flex gap-6">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
           </div>
 
-          <div className="border-t border-border pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="border-t border-border pt-8 text-center">
             <p className="text-xs text-muted-foreground">© 2025 APEs Community. All rights reserved.</p>
-            <p className="text-xs text-muted-foreground">Built with ❤️ for India's AI entrepreneurs</p>
           </div>
         </div>
       </footer>

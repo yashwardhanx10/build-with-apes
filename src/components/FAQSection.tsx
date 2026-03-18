@@ -10,43 +10,51 @@ import {
 const faqs = [
   {
     q: "What exactly is APEs?",
-    a: "APEs (AI-Powered Entrepreneurs) is India's AI-first entrepreneur community with 3,000+ members across 120+ cities. We help founders and business owners build, launch, and scale using AI — through live workshops, city meetups, demo days, and a curated network of serious builders.",
+    a: "APEs (AI-Powered Entrepreneurs) is India's AI-first entrepreneur community with 3,000+ members across 120+ cities. We help founders and business owners build, launch, and scale using AI — through live masterclasses, city meetups, and a curated network of serious builders.",
   },
   {
-    q: "Who is APEs for — and who is it NOT for?",
-    a: "APEs is for early-stage founders, business owners scaling with AI, operators building AI workflows, and anyone serious about executing. It is NOT for passive learners, people looking for quick money, or those unwilling to put in the work.",
+    q: "Who should join APEs?",
+    a: "APEs is for early-stage founders, business owners scaling with AI, operators building AI workflows, and anyone serious about executing. If you're building something real or preparing to, this is where you belong.",
   },
   {
-    q: "What do I get with my membership?",
-    a: "You get access to the full APE platform: 2 live masterclasses/month, 100+ recorded sessions, member directory, monthly demo days, city meetups, APEs Launchpad, AI tools & agents, prompt libraries, automation templates, co-founder matching, and more.",
+    q: "What do I get as a member?",
+    a: "You get access to the full APEs platform: live masterclasses and recordings, the member directory, community discussions, city meetup access, demo days, founder network, and regular event updates.",
   },
   {
-    q: "How are the workshops conducted?",
-    a: "We host 2 live online workshops every month — one on AI tools & business applications, and one on business fundamentals & growth. All sessions are recorded and available in our library for on-demand access anytime.",
+    q: "Are the masterclasses live or recorded?",
+    a: "Both. We host live expert-led masterclasses on AI, business, growth, and execution. All sessions are recorded and available inside the community for on-demand access anytime.",
   },
   {
-    q: "What is APEs Launchpad?",
-    a: "When you launch a product, APEs Launchpad gives you community announcements, Instagram and Twitter features, a founder interview, community feedback, and access to beta users — all from within the 3,000+ member network.",
+    q: "How often do community sessions happen?",
+    a: "We run masterclasses regularly along with community discussions, demo days, and city meetups throughout the month. There's always something happening inside APEs.",
   },
   {
-    q: "What are APEs Demo Days (APEs Tank)?",
-    a: "Every 2 months, 10 selected founders pitch their ideas to the entire community. You get investor feedback, find early customers, and validate your product with real entrepreneurs who can become your first users.",
+    q: "Does APEs have offline meetups?",
+    a: "Yes! We host city meetups across India in cities like Mumbai, Bangalore, Delhi, Pune, Jaipur, Ahmedabad, Hyderabad, and more. These are real conversations with real builders.",
   },
   {
-    q: "Are there in-person events and meetups?",
-    a: "Yes! We host monthly city meetups across 10+ Indian cities including Mumbai, Bangalore, Delhi, Pune, Jaipur, Ahmedabad, Chennai, Hyderabad, and more. Plus annual member-only retreats at exotic locations.",
+    q: "Can I connect with founders from my city or industry?",
+    a: "Absolutely. The APEs Member Directory lets you find entrepreneurs by city, sector, and expertise. It's one of the most valued features in the community.",
   },
   {
-    q: "How is APEs different from other communities?",
-    a: "Most communities offer content and networking. APEs offers real outcomes — users for your product, beta testers, co-founder matching, demo days with investors, a launchpad for your business, and a directory of 3,000+ entrepreneurs. We're built for action, not passive consumption.",
+    q: "Is APEs useful for beginners, or only for experienced founders?",
+    a: "APEs is for anyone serious about building. Whether you're just getting started or already running a business, the community, masterclasses, and network are designed to help you move forward faster.",
   },
   {
-    q: "Can I get a refund?",
-    a: "Yes! We offer a 30-day money-back guarantee. If APEs isn't the right fit for you, just reach out within 30 days and we'll process your refund — no questions asked.",
+    q: "How is APEs different from other startup or AI communities?",
+    a: "Most communities offer content and networking. APEs offers real outcomes — a curated founder network, demo days with feedback, city meetups, a member directory, and practical masterclasses. We're built for action, not passive consumption.",
   },
   {
-    q: "Is this a one-time payment or recurring subscription?",
-    a: "Both plans (1-year and 5-year) are one-time payments. No recurring fees, no hidden charges. Pay once and get full access for the duration of your membership.",
+    q: "Is the payment one-time or recurring?",
+    a: "All plans are one-time payments. No recurring fees, no hidden charges. Pay once and get full access for the duration of your membership.",
+  },
+  {
+    q: "How do I join after making the payment?",
+    a: "After payment, you'll receive access details via email to join the APEs platform. You can start exploring the community, masterclasses, directory, and events immediately.",
+  },
+  {
+    q: "Who can I contact if I face any issue?",
+    a: "You can reach out to our support team anytime. We're available 24/7 to help with any questions or issues you may have.",
   },
 ];
 
@@ -61,11 +69,10 @@ const FAQSection = () => {
           className="text-center mb-12"
         >
           <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">FAQ</p>
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Got questions?{" "}
-            <span className="text-gradient">We've got answers.</span>
+          <h2 className="text-3xl sm:text-4xl font-bold">
+            Frequently Asked{" "}
+            <span className="text-gradient">Questions</span>
           </h2>
-          <p className="text-muted-foreground">Everything you need to know before joining APEs.</p>
         </motion.div>
 
         <motion.div
