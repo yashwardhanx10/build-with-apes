@@ -1,12 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowRight, Play, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { useRef } from "react";
-
-const companyLogos = [
-  "Flipkart", "Razorpay", "Zerodha", "Ola", "PhonePe",
-  "Swiggy", "Meesho", "CRED", "Zomato", "Dream11",
-  "UpGrad", "Lenskart", "Nykaa", "boAt", "Mamaearth",
-];
 
 const HeroSection = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -16,7 +10,6 @@ const HeroSection = () => {
 
   return (
     <section ref={ref} className="relative min-h-[100vh] flex flex-col justify-center overflow-hidden pt-20 pb-8">
-      {/* Animated background layers */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,hsl(24_95%_53%/0.12),transparent)]" />
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-primary/[0.04] blur-[150px]" />
@@ -27,7 +20,6 @@ const HeroSection = () => {
       </div>
 
       <motion.div style={{ opacity }} className="relative z-10 container-tight mx-auto section-padding text-center flex-1 flex flex-col justify-center">
-        {/* Eyebrow */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -38,15 +30,14 @@ const HeroSection = () => {
           <span className="text-sm text-primary font-medium">India's AI-First Entrepreneur Community</span>
         </motion.div>
 
-        {/* Main Headline — Storytelling */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
           className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight mb-6"
         >
-          <span className="block">Welcome to</span>
-          <span className="text-gradient block">APEs Community</span>
+          <span className="block">India's AI-First</span>
+          <span className="text-gradient block">Entrepreneur Community</span>
         </motion.h1>
 
         <motion.p
@@ -55,7 +46,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.25 }}
           className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-4 leading-relaxed"
         >
-          Ten years from now, businesses will be divided into two types.
+          Learn, build, and grow with ambitious founders, operators, and future entrepreneurs using AI to create real businesses.
         </motion.p>
 
         <motion.p
@@ -64,11 +55,10 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-10"
         >
-          Those who adapted to AI. And those who <span className="line-through opacity-60">didn't survive</span>.{" "}
-          <strong className="text-foreground">We're here to make sure you're in the first group.</strong>
+          Ten years from now, businesses will be divided into two types — those who adapted to AI, and those who didn't.{" "}
+          <strong className="text-foreground">APEs exists to make sure you're in the first group.</strong>
         </motion.p>
 
-        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -79,34 +69,28 @@ const HeroSection = () => {
             href="#pricing"
             className="group flex items-center gap-2 bg-gradient-primary text-primary-foreground font-semibold px-8 py-4 rounded-full text-lg hover:opacity-90 transition-all glow-border"
           >
-            Join APEs Club
+            Join APEs
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
           </a>
           <a
-            href="https://www.youtube.com/watch?v=rUtxy713cVg"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#community"
             className="flex items-center gap-2 border border-border text-foreground font-medium px-8 py-4 rounded-full text-lg hover:bg-card transition-colors"
           >
-            <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
-              <Play size={14} className="text-primary ml-0.5" />
-            </div>
-            Watch Our Story
+            Explore Community
           </a>
         </motion.div>
 
-        {/* Stats */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.6 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto mb-16"
+          className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto"
         >
           {[
             { number: "3,000+", label: "Entrepreneurs" },
             { number: "51+", label: "Industries" },
             { number: "120+", label: "Cities" },
-            { number: "24+", label: "Expert Workshops" },
+            { number: "13+", label: "Masterclasses" },
           ].map((stat, i) => (
             <motion.div
               key={stat.label}
@@ -120,29 +104,6 @@ const HeroSection = () => {
             </motion.div>
           ))}
         </motion.div>
-      </motion.div>
-
-      {/* Company Logos Marquee */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
-        className="relative z-10 border-t border-border/50 pt-8 pb-4"
-      >
-        <p className="text-center text-xs text-muted-foreground uppercase tracking-widest mb-6">
-          Our members work at & build companies like
-        </p>
-        <div className="overflow-hidden relative">
-          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background to-transparent z-10" />
-          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent z-10" />
-          <div className="flex animate-marquee gap-12 items-center whitespace-nowrap">
-            {[...companyLogos, ...companyLogos].map((logo, i) => (
-              <span key={i} className="text-muted-foreground/40 font-display text-lg font-semibold tracking-wide flex-shrink-0">
-                {logo}
-              </span>
-            ))}
-          </div>
-        </div>
       </motion.div>
     </section>
   );

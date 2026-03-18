@@ -30,18 +30,11 @@ const testimonials = [
     image: "https://framerusercontent.com/images/YJtfq6Qd9vRfKFRkyfkSOFVL3Sw.jpeg",
     result: "Idea → Paying customers in 60 days",
   },
-  {
-    quote: "Loved the directory feature—made it easy to find and connect with people near me. Already closed 3 deals through community connections.",
-    name: "KVc",
-    role: "Agency Owner",
-    image: "https://framerusercontent.com/images/nVV2pWUKxOIcuK3XnddMT4kv3g.jpeg",
-    result: "Closed 3 deals via community",
-  },
 ];
 
 const TestimonialsSection = () => {
   return (
-    <section className="section-padding bg-card/30" id="testimonials">
+    <section className="section-padding" id="testimonials">
       <div className="container-tight mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -54,10 +47,10 @@ const TestimonialsSection = () => {
             Real builders.{" "}
             <span className="text-gradient">Real results.</span>
           </h2>
-          <p className="text-muted-foreground text-lg">Hear from entrepreneurs building with AI inside APEs</p>
+          <p className="text-muted-foreground text-lg">Hear from entrepreneurs building with AI inside APEs.</p>
         </motion.div>
 
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-5 space-y-5">
+        <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto">
           {testimonials.map((t, i) => (
             <motion.div
               key={t.name}
@@ -65,7 +58,7 @@ const TestimonialsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className="break-inside-avoid bg-background border border-border rounded-2xl p-6 hover:border-primary/20 transition-all relative overflow-hidden"
+              className="bg-card border border-border rounded-2xl p-6 hover:border-primary/20 transition-all relative overflow-hidden"
             >
               <Quote size={32} className="text-primary/10 absolute top-4 right-4" />
               <div className="flex gap-1 mb-4">

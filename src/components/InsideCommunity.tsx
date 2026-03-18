@@ -1,49 +1,48 @@
 import { motion } from "framer-motion";
-import { Monitor, Users, Video, BookOpen, MessageSquare, Briefcase } from "lucide-react";
+import { Users, GraduationCap, TrendingUp, Calendar, BookOpen, MessageSquare } from "lucide-react";
 
 const features = [
   {
-    icon: Monitor,
-    title: "Member Dashboard",
-    description: "Track progress, access workshops, manage your profile.",
-    span: "lg:col-span-2",
-    image: "https://framerusercontent.com/images/Kg8Yg021blb7BcHLDsIhjobQA3k.png",
-  },
-  {
     icon: Users,
-    title: "Member Directory",
-    description: "Find entrepreneurs by city, sector, and expertise. The APEs Directory is the community's gem.",
-    span: "",
+    tag: "Connect",
+    title: "3,000+ Founder Network",
+    description: "Find co-founders, collaborators, partners, and smart people building across India.",
   },
   {
-    icon: Video,
-    title: "100+ Workshop Recordings",
-    description: "Every session recorded. AI tools, growth, business fundamentals — on demand.",
-    span: "",
+    icon: GraduationCap,
+    tag: "Learn",
+    title: "Live Masterclasses & Recordings",
+    description: "Expert-led sessions on AI, business, growth, and execution — with recordings available inside the community.",
+  },
+  {
+    icon: TrendingUp,
+    tag: "Grow",
+    title: "Demo Days & Founder Feedback",
+    description: "Pitch your ideas, get feedback, and learn from other builders in the community.",
+  },
+  {
+    icon: Calendar,
+    tag: "Meet",
+    title: "City Meetups & Community Events",
+    description: "Meet founders and builders offline through city meetups and community gatherings.",
   },
   {
     icon: BookOpen,
-    title: "Resource Library",
-    description: "Prompt libraries, automation templates, growth playbooks, and AI stack breakdowns.",
-    span: "",
+    tag: "Directory",
+    title: "Member Directory — The APEs Gem",
+    description: "Find entrepreneurs by city, sector, and expertise. The APEs Directory helps members discover the right people faster.",
   },
   {
     icon: MessageSquare,
+    tag: "Discuss",
     title: "Community Discussions",
-    description: "Daily threads on AI trends, founder wins, hiring, and tool recommendations.",
-    span: "",
-  },
-  {
-    icon: Briefcase,
-    title: "APE Careers Board",
-    description: "Jobs, internships, co-founder matching, and hiring — all within the network.",
-    span: "lg:col-span-2",
+    description: "Action-oriented threads on AI trends, founder wins, feedback, and tool recommendations.",
   },
 ];
 
 const InsideCommunity = () => {
   return (
-    <section className="section-padding bg-card/30 relative overflow-hidden">
+    <section className="section-padding bg-card/30 relative overflow-hidden" id="benefits">
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
 
       <div className="container-tight mx-auto">
@@ -61,7 +60,7 @@ const InsideCommunity = () => {
           <p className="text-muted-foreground text-lg">Everything you need to build, learn, connect, and grow.</p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {features.map((f, i) => (
             <motion.div
               key={f.title}
@@ -69,17 +68,13 @@ const InsideCommunity = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.06 }}
-              className={`group bg-background border border-border rounded-2xl p-6 hover:border-primary/20 transition-all relative overflow-hidden ${f.span}`}
+              className="group bg-background border border-border rounded-2xl p-7 hover:border-primary/20 transition-all"
             >
-              {f.image && (
-                <div className="mb-4 rounded-xl overflow-hidden border border-border">
-                  <img src={f.image} alt={f.title} className="w-full h-40 object-cover opacity-60 group-hover:opacity-80 transition-opacity" />
-                </div>
-              )}
-              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                <f.icon size={20} className="text-primary" />
+              <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/15 transition-colors">
+                <f.icon size={22} className="text-primary" />
               </div>
-              <h3 className="text-base font-bold mb-1">{f.title}</h3>
+              <span className="text-[11px] font-bold text-primary uppercase tracking-[0.2em]">{f.tag}</span>
+              <h3 className="text-lg font-bold mt-2 mb-2">{f.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{f.description}</p>
             </motion.div>
           ))}
