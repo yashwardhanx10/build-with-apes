@@ -23,8 +23,8 @@ const features = [
   {
     icon: Calendar,
     tag: "Meet",
-    title: "City Meetups & Community Events",
-    description: "Meet founders and builders offline through city meetups and community gatherings.",
+    title: "City Meetups ",
+    description: "Meet founders and builders offline through city meetup.",
   },
   {
     icon: BookOpen,
