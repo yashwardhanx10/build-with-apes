@@ -4,13 +4,13 @@ const founders = [
   {
     name: "Rishabh Jain",
     role: "Co-founder, APEs",
-    bio: "Rishabh Jain is a serial entrepreneur and the co-founder of LLA, India's leading personal finance & employee rights platform with over 8M subscribers. \n\nHe is now on a mission to empower millions to realize their dream of becoming a successful entrepreneur.",
+    bio: "Rishabh Jain is a serial entrepreneur and the co-founder of LLA, India's leading personal finance & employee rights platform with over 8M subscribers.\n\n He is now on a mission to empower millions to realize their dream of becoming a successful entrepreneur.",
     image: "https://apes.lla.in/founders/rj.avif",
   },
   {
     name: "Nivedan Rathi",
     role: "Co-founder, APEs",
-    bio: "Nivedan Rathi is the founder of Future & AI, India's leading Generative AI education platform for entrepreneurs to 10x their business. He ran a funded AI startup in 2017–18 and now consults top Indian and global companies on AI transformation.",
+    bio: "Nivedan Rathi is the founder of Future & AI, India's leading Generative AI education platform for entrepreneurs to 10x their business.\n\nHe ran a funded AI startup in 2017–18 and now consults top Indian and global companies on AI transformation.",
     image: "https://apes.lla.in/founders/nivedan.avif",
   },
 ];
