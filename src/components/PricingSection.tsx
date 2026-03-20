@@ -48,13 +48,12 @@ const PricingSection = () => {
               <span className="text-muted-foreground text-sm ml-2">/ year</span>
             </div>
             <ul className="space-y-3 mb-8">
-              {features.map((f) => {}
-
-
-
-
-
-              )}
+              {features.filter(f => f).map((f) => (
+                <li key={f} className="flex items-center gap-3 text-sm">
+                  <Check size={18} className="text-primary flex-shrink-0" />
+                  <span>{f}</span>
+                </li>
+              ))}
             </ul>
             <a
               href="https://link.lla.in/apes_1year"
@@ -76,21 +75,18 @@ const PricingSection = () => {
               <Sparkles size={12} /> BEST VALUE
             </div>
             <h3 className="text-lg font-bold mb-2">5 Year Membership</h3>
-<p className="text-muted-foreground text-sm mb-4">
-
-            </p>
+<p className="text-muted-foreground text-sm mb-4">Full lifetime access & future benefits</p>
             <div className="mb-6">
 <span className="text-4xl font-bold text-gradient">₹1,999</span>
               <span className="text-muted-foreground text-sm ml-2">/ lifetime</span>
             </div>
             <ul className="space-y-3 mb-8">
-              {features.map((f) => {}
-
-
-
-
-
-              )}
+              {features.filter(f => f).map((f) => (
+                <li key={f} className="flex items-center gap-3 text-sm">
+                  <Check size={18} className="text-primary flex-shrink-0" />
+                  <span>{f}</span>
+                </li>
+              ))}
               
 
 
@@ -123,13 +119,12 @@ const PricingSection = () => {
               <span className="text-muted-foreground text-sm ml-2">/ 5 years</span>
             </div>
             <ul className="space-y-3 mb-8">
-              {features.map((f) => {}
-
-
-
-
-
-              )}
+              {features.filter(f => f).map((f) => (
+                <li key={f} className="flex items-center gap-3 text-sm">
+                  <Check size={18} className="text-primary flex-shrink-0" />
+                  <span>{f}</span>
+                </li>
+              ))}
               
 
 
