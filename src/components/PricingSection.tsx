@@ -116,7 +116,8 @@ const PricingSection = () => {
             className="bg-card border border-border rounded-3xl p-8">
             
             <h3 className="text-lg font-bold mb-2">Lifetime Membership</h3>
-            <p className="text-muted-foreground text-sm mb-4">
+<p className="text-muted-foreground text-sm mb-4">
+              For  serious long-term builders.
 </p>
             <div className="mb-6">
               <span className="text-4xl font-bold">₹1,999</span>
