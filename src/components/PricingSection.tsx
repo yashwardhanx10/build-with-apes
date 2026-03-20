@@ -95,7 +95,7 @@ const PricingSection = () => {
                 <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
                   <Check size={12} className="text-primary" />
                 </div>
-                <span className="text-primary font-medium">Long-term access at best price</span>
+                
               </li>
             </ul>
             <a
