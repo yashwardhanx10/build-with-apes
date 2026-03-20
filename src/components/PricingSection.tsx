@@ -72,13 +72,13 @@ const PricingSection = () => {
             transition={{ delay: 0.1 }}
             className="relative bg-card border-2 border-primary rounded-3xl p-8 animate-pulse-glow">
             
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-primary text-primary-foreground font-bold px-5 py-1.5 rounded-full flex items-center gap-1 text-lg">Best Value
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-primary text-primary-foreground font-bold px-5 py-1.5 rounded-full flex items-center gap-1 text-lg">BEST VALUE
               <Sparkles size={12} /> BEST VALUE
             </div>
             <h3 className="text-lg font-bold mb-2">5 Year Membership</h3>
 <p className="text-muted-foreground text-sm mb-4">
-              Best Value for the long run.
-</p>
+
+            </p>
             <div className="mb-6">
 <span className="text-4xl font-bold text-gradient">₹1,999</span>
               <span className="text-muted-foreground text-sm ml-2">/ lifetime</span>
