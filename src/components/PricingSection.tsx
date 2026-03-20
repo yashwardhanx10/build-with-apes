@@ -28,18 +28,21 @@ const PricingSection = () => {
             Choose your{" "}
             <span className="text-gradient">membership</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-lg mx-auto">
-            Get inside India's AI-first entrepreneur community at an early member price.
-          </p>
+          <p className="text-muted-foreground text-lg max-w-lg mx-auto">Get inside India's AI-first entrepreneur community at an early member price.
+
+
+         Get Access to APEs Platform
+Live Masterclasses & Recordings
+Member Directory
+Community Discussions
+Meetup Access
+Founder Network
+Event Updates</p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {/* 1 Year */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="bg-card border border-border rounded-3xl p-8">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-card border border-border rounded-3xl p-8">
             
             <h3 className="text-lg font-bold mb-2">1 Year Membership</h3>
             <p className="text-muted-foreground text-sm mb-4">Perfect for members getting started with APEs.</p>
@@ -48,16 +51,13 @@ const PricingSection = () => {
               <span className="text-muted-foreground text-sm ml-2">/ year</span>
             </div>
             <ul className="space-y-3 mb-8">
-              {features.filter(f => f).map((f) => (
-                <li key={f} className="flex items-center gap-3 text-sm">
+              {features.filter((f) => f).map((f) => <li key={f} className="flex items-center gap-3 text-sm">
                   <Check size={18} className="text-primary flex-shrink-0" />
                   <span>{f}</span>
-                </li>
-              ))}
+                </li>)}
             </ul>
-            <a
-              href="https://link.lla.in/apes_1year"
-              className="block w-full text-center border-2 border-primary text-primary font-bold py-3.5 rounded-full hover:bg-primary/10 transition-colors">Join APEs — 1 Year
+            <a href="https://link.lla.in/apes_1year"
+            className="block w-full text-center border-2 border-primary text-primary font-bold py-3.5 rounded-full hover:bg-primary/10 transition-colors">Join APEs — 1 Year
 
 
             </a>
@@ -81,12 +81,12 @@ const PricingSection = () => {
               <span className="text-muted-foreground text-sm ml-2">/ lifetime</span>
             </div>
             <ul className="space-y-3 mb-8">
-              {features.filter(f => f).map((f) => (
-                <li key={f} className="flex items-center gap-3 text-sm">
+              {features.filter((f) => f).map((f) =>
+              <li key={f} className="flex items-center gap-3 text-sm">
                   <Check size={18} className="text-primary flex-shrink-0" />
                   <span>{f}</span>
                 </li>
-              ))}
+              )}
               
 
 
@@ -119,12 +119,12 @@ const PricingSection = () => {
               <span className="text-muted-foreground text-sm ml-2">/ 5 years</span>
             </div>
             <ul className="space-y-3 mb-8">
-              {features.filter(f => f).map((f) => (
-                <li key={f} className="flex items-center gap-3 text-sm">
+              {features.filter((f) => f).map((f) =>
+              <li key={f} className="flex items-center gap-3 text-sm">
                   <Check size={18} className="text-primary flex-shrink-0" />
                   <span>{f}</span>
                 </li>
-              ))}
+              )}
               
 
 
