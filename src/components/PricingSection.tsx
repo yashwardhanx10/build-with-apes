@@ -48,13 +48,12 @@ const PricingSection = () => {
               <span className="text-muted-foreground text-sm ml-2">/ year</span>
             </div>
             <ul className="space-y-3 mb-8">
-              {features.map((f) => {}
-
-
-
-
-
-              )}
+              {features.filter(f => f).map((f) => (
+                <li key={f} className="flex items-center gap-3 text-sm">
+                  <Check size={18} className="text-primary flex-shrink-0" />
+                  <span>{f}</span>
+                </li>
+              ))}
             </ul>
             <a
               href="https://link.lla.in/apes_1year"
