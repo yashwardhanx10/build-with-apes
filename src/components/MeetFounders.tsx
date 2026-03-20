@@ -10,7 +10,7 @@ const founders = [
   {
     name: "Nivedan Rathi",
     role: "Co-founder, APEs",
-    bio: "Nivedan Rathi is the founder of Future & AI, India's leading Generative AI education platform for entrepreneurs to 10x their business. He ran a funded AI startup in 2017–18 and now consults top Indian and global companies on AI transformation.",
+    bio: "Nivedan Rathi is the founder of Future & AI, India's leading Generative AI education platform for entrepreneurs to 10x their business.\n\nHe ran a funded AI startup in 2017–18 and now consults top Indian and global companies on AI transformation.",
     image: "https://apes.lla.in/founders/nivedan.avif",
   },
 ];
