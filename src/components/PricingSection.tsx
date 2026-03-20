@@ -81,13 +81,12 @@ const PricingSection = () => {
               <span className="text-muted-foreground text-sm ml-2">/ lifetime</span>
             </div>
             <ul className="space-y-3 mb-8">
-              {features.map((f) => {}
-
-
-
-
-
-              )}
+              {features.filter(f => f).map((f) => (
+                <li key={f} className="flex items-center gap-3 text-sm">
+                  <Check size={18} className="text-primary flex-shrink-0" />
+                  <span>{f}</span>
+                </li>
+              ))}
               
 
 
