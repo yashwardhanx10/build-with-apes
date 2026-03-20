@@ -74,8 +74,7 @@ const PricingSection = () => {
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-primary text-primary-foreground font-bold px-5 py-1.5 rounded-full flex items-center gap-1 text-lg">BEST VALUE
               <Sparkles size={12} /> BEST VALUE
             </div>
-            <h3 className="text-lg font-bold mb-2">
-</h3>
+            <h3 className="text-lg font-bold mb-2">Lifetime Membership</h3>
 <p className="text-muted-foreground text-sm mb-4">Full lifetime access & future benefits</p>
             <div className="mb-6">
 <span className="text-4xl font-bold text-gradient">₹1,999</span>
