@@ -4,7 +4,7 @@ const founders = [
   {
     name: "Rishabh Jain",
     role: "Co-founder, APEs",
-    bio: "Rishabh Jain is a serial entrepreneur and the co-founder of LLA, India's leading personal finance & employee rights platform with over 8M subscribers. \n\nHe is now on a mission to empower millions to realize their dream of becoming a successful entrepreneur.",
+    bio: "Rishabh Jain is a serial entrepreneur and the co-founder of LLA, India's leading personal finance & employee rights platform with over 8M subscribers.\n\n He is now on a mission to empower millions to realize their dream of becoming a successful entrepreneur.",
     image: "https://apes.lla.in/founders/rj.avif",
   },
   {
