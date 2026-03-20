@@ -28,16 +28,16 @@ const PricingSection = () => {
             Choose your{" "}
             <span className="text-gradient">membership</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-lg mx-auto">Get inside India's AI-first entrepreneur community at an early member price.
+          <p className="text-muted-foreground text-lg max-w-lg mx-auto">Get inside India's AI-first entrepreneur community at an early member price.       
+ 
 
-
-         Get Access to APEs Platform
-Live Masterclasses & Recordings
-Member Directory
-Community Discussions
-Meetup Access
-Founder Network
-Event Updates</p>
+                                       Get Access to APEs Platform
+                            Live Masterclasses & Recordings
+                                         Member Directory
+                                   Community Discussions
+                                       Meetup Access
+                                     Founder Network
+                                         Event Updates</p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -74,15 +74,15 @@ Event Updates</p>
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-primary text-primary-foreground font-bold px-5 py-1.5 rounded-full flex items-center gap-1 text-lg">BEST VALUE
               <Sparkles size={12} /> BEST VALUE
             </div>
-            <h3 className="text-lg font-bold mb-2">5 Year Membership</h3>
+            <h3 className="text-lg font-bold mb-2">
+</h3>
 <p className="text-muted-foreground text-sm mb-4">Full lifetime access & future benefits</p>
             <div className="mb-6">
 <span className="text-4xl font-bold text-gradient">₹1,999</span>
               <span className="text-muted-foreground text-sm ml-2">/ lifetime</span>
             </div>
             <ul className="space-y-3 mb-8">
-              {features.filter((f) => f).map((f) =>
-              <li key={f} className="flex items-center gap-3 text-sm">
+              {features.filter((f) => f).map((f) => <li key={f} className="flex items-center gap-3 text-sm">
                   <Check size={18} className="text-primary flex-shrink-0" />
                   <span>{f}</span>
                 </li>
@@ -110,7 +110,8 @@ Event Updates</p>
             transition={{ delay: 0.2 }}
             className="bg-card border border-border rounded-3xl p-8">
             
-            <h3 className="text-lg font-bold mb-2">Lifetime Membership</h3>
+            <h3 className="text-lg font-bold mb-2">
+</h3>
 <p className="text-muted-foreground text-sm mb-4">
               For  serious long-term builders.
 </p>
@@ -119,8 +120,7 @@ Event Updates</p>
               <span className="text-muted-foreground text-sm ml-2">/ 5 years</span>
             </div>
             <ul className="space-y-3 mb-8">
-              {features.filter((f) => f).map((f) =>
-              <li key={f} className="flex items-center gap-3 text-sm">
+              {features.filter((f) => f).map((f) => <li key={f} className="flex items-center gap-3 text-sm">
                   <Check size={18} className="text-primary flex-shrink-0" />
                   <span>{f}</span>
                 </li>
