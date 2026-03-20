@@ -36,7 +36,7 @@ const features = [
     icon: MessageSquare,
     tag: "Discuss",
     title: "Community Discussions",
-    description: "Action-oriented threads on AI trends, founder wins, feedback, and tool recommendations.",
+    description: "Active Discussions on AI trends, founder wins, feedback, and tool recommendations.",
   },
 ];
 

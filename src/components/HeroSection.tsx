@@ -37,9 +37,10 @@ const HeroSection = () => {
           className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight mb-6">
           
           <span className="block">​Transform Into
- 
+
           </span>
-          <span className="text-gradient block">Entrepreneur Community</span>
+          <span className="text-gradient block">An AI-Powered
+Entrepreneur</span>
         </motion.h1>
 
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
