@@ -1,14 +1,7 @@
 import { motion } from "framer-motion";
 import { Check, Shield, Headphones, Users, Sparkles } from "lucide-react";
 
-const features = [
-  "Access to APEs Platform",
-  "Live Masterclasses & Recordings",
-  "Member Directory",
-  "Community Discussions",
-  "Meetup Access",
-  "Founder Network",
-];
+const features: string[] = [];
 
 const PricingSection = () => {
   return (
