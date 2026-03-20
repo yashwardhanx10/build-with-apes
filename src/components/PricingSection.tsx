@@ -76,9 +76,7 @@ const PricingSection = () => {
               <Sparkles size={12} /> BEST VALUE
             </div>
             <h3 className="text-lg font-bold mb-2">5 Year Membership</h3>
-<p className="text-muted-foreground text-sm mb-4">
-
-            </p>
+<p className="text-muted-foreground text-sm mb-4">Full lifetime access & future benefits</p>
             <div className="mb-6">
 <span className="text-4xl font-bold text-gradient">₹1,999</span>
               <span className="text-muted-foreground text-sm ml-2">/ lifetime</span>
