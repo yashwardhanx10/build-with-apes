@@ -109,8 +109,7 @@ const PricingSection = () => {
             transition={{ delay: 0.2 }}
             className="bg-card border border-border rounded-3xl p-8">
             
-            <h3 className="text-lg font-bold mb-2">
-</h3>
+            <h3 className="text-lg font-bold mb-2">5 Year Membership</h3>
 <p className="text-muted-foreground text-sm mb-4">
               For  serious long-term builders.
 </p>
