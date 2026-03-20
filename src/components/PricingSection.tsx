@@ -8,7 +8,7 @@ const features = [
 "Community Discussions",
 "Meetup Access",
 "Founder Network",
-"Event Updates"];
+""];
 
 
 const PricingSection = () => {
