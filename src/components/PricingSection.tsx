@@ -127,7 +127,7 @@ const PricingSection = () => {
                   <div className="w-5 h-5 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
                     <Check size={12} className="text-muted-foreground" />
                   </div>
-                  <span className="text-muted-foreground">{f}</span>
+                  
                 </li>
               )}
               <li className="flex items-center gap-3 text-sm">
