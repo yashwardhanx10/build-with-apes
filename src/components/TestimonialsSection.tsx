@@ -7,28 +7,28 @@ const testimonials = [
   name: "Shenthil Thakku",
   role: "SaaS Founder",
   image: "https://framerusercontent.com/images/uTz4Zq0hB3m6j1IaHlGQfCEPk.jpeg",
-  result: "Applied AI insights to SaaS in 1 week"
+  result: ""
 },
 {
   quote: "I was confused about marketing my shop—but now I've found clarity and my target audience. The AI workflows changed everything for my retail business.",
   name: "Kartik Singhania",
   role: "Retail Business Owner",
   image: "https://framerusercontent.com/images/v38VQxUavAEpIgfVm9sLgljTmk.png?scale-down-to=1024",
-  result: "Found target audience using AI"
+  result: ""
 },
 {
   quote: "Seeing the first demo pitches was inspiring—makes building feel less intimidating. Found my co-founder through the APEs directory!",
   name: "Sunil Maurya",
   role: "Tech Entrepreneur",
   image: "https://framerusercontent.com/images/uTs5BPwwNSvgUzjlDCoMGzG6fc.jpeg",
-  result: "Found co-founder via APEs"
+  result: ""
 },
 {
   quote: "The MVP and business plan framework was super clear and actionable. Went from idea to paying customers in 60 days using AI automations.",
   name: "Walson Dmello",
   role: "EdTech Founder",
   image: "https://framerusercontent.com/images/YJtfq6Qd9vRfKFRkyfkSOFVL3Sw.jpeg",
-  result: "Idea → Paying customers in 60 days"
+  result: ""
 }];
 
 
