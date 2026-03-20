@@ -120,8 +120,8 @@ const PricingSection = () => {
               For  serious long-term builders.
 </p>
             <div className="mb-6">
-              <span className="text-4xl font-bold">₹1,999</span>
-              <span className="text-muted-foreground text-sm ml-2">/ lifetime</span>
+<span className="text-4xl font-bold">₹1,499</span>
+              <span className="text-muted-foreground text-sm ml-2">/ 5 years</span>
             </div>
             <ul className="space-y-3 mb-8">
               {features.map((f) => <li key={f} className="flex items-center gap-3 text-sm">
