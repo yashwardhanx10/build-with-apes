@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Linkedin } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const speakers = [
   {
@@ -8,7 +9,7 @@ const speakers = [
     bio: "Backs India's most promising early-stage startups. IIT Bombay alumnus, IIM Ahmedabad gold medalist, and multi-time startup builder.",
     tags: ["Early-stage Investing", "Startup Building", "Founder Insights"],
     linkedin: "https://www.linkedin.com/in/aviral-bhatnagar-ajuniorvc/",
-    image: "https://media.licdn.com/dms/image/v2/D5603AQHBx8s2RDhSOA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718299849297?e=1740614400&v=beta&t=placeholder",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQHBx8s2RDhSOA/profile-displayphoto-shrink_400_400/B56ZPJ2mVeHkAg-/0/1734350785498?e=1756339200&v=beta&t=9Qz9Q9Q9Q9Q9Q9Q9Q9Q9Q9Q9Q9Q9Q9Q9Q",
   },
   {
     name: "Roli Gupta",
@@ -16,6 +17,7 @@ const speakers = [
     bio: "Founder of Babblebots.ai, a GenAI platform transforming recruitment. IIT Bombay & UC Berkeley alumna with 20+ years of experience.",
     tags: ["GenAI", "Recruitment Innovation", "Startup Leadership"],
     linkedin: "https://www.linkedin.com/in/rolig/",
+    image: "",
   },
   {
     name: "Nitin Jain",
@@ -23,6 +25,7 @@ const speakers = [
     bio: "20+ years supporting 100+ founders, 350+ brands, and impacting 5M+ lives at the intersection of creativity, culture, and capital.",
     tags: ["Founder Growth", "Brand Building", "Creative Economy"],
     linkedin: "https://www.linkedin.com/in/indianimator/",
+    image: "",
   },
   {
     name: "Sara Davison",
@@ -30,6 +33,7 @@ const speakers = [
     bio: "Helps businesses scale using AI and agentic workflows. Educated 8,000+ people in one of today's most in-demand skill areas.",
     tags: ["AI Education", "Agentic Workflows", "Business Scaling"],
     linkedin: "https://www.linkedin.com/in/sara-davison-21b41131/",
+    image: "",
   },
   {
     name: "Tyler Fisk",
@@ -37,6 +41,7 @@ const speakers = [
     bio: "AI speaker, educator, and builder focused on no-code agentic workflows for startups to Fortune 50 companies.",
     tags: ["No-code AI", "Agentic Workflows", "Enterprise AI"],
     linkedin: "https://www.linkedin.com/in/tyfisk/",
+    image: "",
   },
   {
     name: "Dhaval Doshi",
@@ -44,6 +49,7 @@ const speakers = [
     bio: "Deep expertise in digital transformation, marketing systems, and martech-led business growth for founders scaling go-to-market.",
     tags: ["Digital Transformation", "Martech", "Product-led Growth"],
     linkedin: "https://www.linkedin.com/in/ondhago/",
+    image: "",
   },
   {
     name: "Samruddhi Dodal",
@@ -51,6 +57,7 @@ const speakers = [
     bio: "AI consultant for early-stage startups. Previously with BCG and Mondelez. Helps entrepreneurs convert ideas into tech-enabled businesses.",
     tags: ["AI for Startups", "Strategy", "Startup Execution"],
     linkedin: "https://www.linkedin.com/in/sdodal/",
+    image: "",
   },
   {
     name: "Amit Agarwal",
@@ -58,6 +65,7 @@ const speakers = [
     bio: "20 years building AI products at scale. Led engineering at Google, American Express, Amazon, and Yahoo. Currently building in stealth.",
     tags: ["AI Product Leadership", "Engineering Scale", "Startup Building"],
     linkedin: "#",
+    image: "",
   },
   {
     name: "Dilnawaz Khan",
@@ -65,6 +73,7 @@ const speakers = [
     bio: "Trained 15,000+ startup founders on pitching, storytelling, and fundraising strategy with clarity and confidence.",
     tags: ["Pitching", "Storytelling", "Fundraising"],
     linkedin: "https://www.linkedin.com/in/dilnawazkhan/",
+    image: "",
   },
   {
     name: "Ashutosh Sharma",
@@ -72,6 +81,7 @@ const speakers = [
     bio: "Two decades of global experience across digital transformation and AI enablement. Advises on Generative AI and Agentic AI at scale.",
     tags: ["Generative AI", "Enterprise AI", "Responsible AI"],
     linkedin: "https://www.linkedin.com/in/ashutoshsharmain/",
+    image: "",
   },
   {
     name: "Kirti Vardhan Rathore",
@@ -79,6 +89,7 @@ const speakers = [
     bio: "Multidisciplinary branding expert. NID Bengaluru & IIT Jodhpur alumnus. Worked on landmark branding projects including HPCL's Golden Jubilee.",
     tags: ["Branding", "Design Strategy", "User Experience"],
     linkedin: "https://www.linkedin.com/in/kirtivardhanrathore/",
+    image: "",
   },
   {
     name: "Pritesh Mittal",
@@ -86,6 +97,7 @@ const speakers = [
     bio: "Bootstrapped Growisto to $3M+ revenue with 120+ team. IIT Bombay alumnus. Scaled brands like ABFRL, Tata, Nykaa, and Puma.",
     tags: ["Bootstrapping", "Growth Systems", "Digital Scale"],
     linkedin: "https://www.linkedin.com/in/priteshmittal/",
+    image: "",
   },
   {
     name: "Ashish Burade",
@@ -93,6 +105,7 @@ const speakers = [
     bio: "Growth strategist for D2C brands. Bootstrapped a content-first eCommerce brand to $500K+ ARR. Led acquisition at Flatheads & Fitternity.",
     tags: ["Growth Strategy", "D2C Scaling", "GTM"],
     linkedin: "https://www.linkedin.com/in/ashishburade/",
+    image: "",
   },
 ];
 
@@ -136,9 +149,12 @@ const PastSpeakers = () => {
               className="group bg-card border border-border rounded-2xl p-6 hover:border-primary/20 transition-all"
             >
               <div className="flex items-start justify-between mb-4">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg">
-                  {s.name.charAt(0)}
-                </div>
+                <Avatar className="w-12 h-12">
+                  {s.image && <AvatarImage src={s.image} alt={s.name} />}
+                  <AvatarFallback className="bg-primary/10 text-primary font-bold text-lg">
+                    {s.name.charAt(0)}
+                  </AvatarFallback>
+                </Avatar>
                 {s.linkedin && s.linkedin !== "#" && (
                   <a
                     href={s.linkedin}
