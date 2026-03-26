@@ -1,7 +1,17 @@
 import { motion } from "framer-motion";
 import { Check, Shield, Headphones, Users, Sparkles } from "lucide-react";
 
-const features: string[] = [];
+const features = [
+  "📱 Access to APE Platform & Mobile App",
+  "🎤 AMA Sessions with RJ & Mentors",
+  "🎓 Expert-Led Masterclasses",
+  "🤝 Offline Founder Meetups – APEx",
+  "🤖 Daily AI Tools & Use Cases",
+  "📇 Access to APEs Directory",
+  "📚 Learning Resources",
+  "🧠 Curated Interest Groups",
+  "🚀 Demo Days Participation Access",
+];
 
 const PricingSection = () => {
   return (
