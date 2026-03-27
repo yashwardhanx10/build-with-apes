@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import apesLogo from "@/assets/apes-logo.png";
 
 const navLinks = [
   { label: "Community", href: "#community" },
@@ -27,7 +28,7 @@ const Navbar = () => {
       <div className="container-tight mx-auto flex items-center justify-between h-16 px-4 sm:px-6">
         <a href="#" className="flex items-center gap-2">
           <img
-            src="https://i.postimg.cc/WbdqmBqy/APES-Logo-Inverted-Vector.png"
+            src={apesLogo}
             alt="APEs Logo"
             className="h-9 w-auto"
           />

@@ -40,10 +40,10 @@ const TestimonialsSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16">
+          className="text-center mb-10 sm:mb-16">
           
           <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">Member Stories</p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 sm:mb-4">
             Real builders.{" "}
             <span className="text-gradient">Real results.</span>
           </h2>

@@ -21,7 +21,7 @@ const PastWorkshops = () => {
         >
           <div>
             <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">Past Events</p>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-2">
               13+ masterclasses.{" "}
               <span className="text-gradient">Practical & recorded.</span>
             </h2>

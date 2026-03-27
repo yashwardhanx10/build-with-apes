@@ -24,10 +24,10 @@ const WhoIsItFor = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12">
+          className="text-center mb-8 sm:mb-12">
           
-          <p className="text-primary font-semibold uppercase tracking-widest mb-3 text-3xl">Who is this for?</p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+          <p className="text-primary font-semibold uppercase tracking-widest mb-3 text-xl sm:text-3xl">Who is this for?</p>
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 sm:mb-4">
             Built for builders.{" "}
             <span className="text-muted-foreground">Not spectators.</span>
           </h2>
@@ -36,12 +36,12 @@ const WhoIsItFor = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-card border border-border rounded-3xl p-8">
+            className="bg-card border border-border rounded-2xl sm:rounded-3xl p-6 sm:p-8">
             
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-6">
               <Check size={14} />
@@ -76,7 +76,7 @@ const WhoIsItFor = () => {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-card border border-border rounded-3xl p-8">
+            className="bg-card border border-border rounded-2xl sm:rounded-3xl p-6 sm:p-8">
             
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-destructive/10 text-destructive text-sm font-semibold mb-6">
               <X size={14} />

@@ -28,13 +28,13 @@ const MeetFounders = () => {
           className="text-center mb-12"
         >
           <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">Meet the Founders</p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
             The visionaries{" "}
             <span className="text-gradient">behind APEs</span>
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-4 sm:gap-8 max-w-4xl mx-auto">
           {founders.map((f, i) => (
             <motion.div
               key={f.name}
@@ -42,7 +42,7 @@ const MeetFounders = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="bg-background border border-border rounded-3xl p-8 text-center"
+              className="bg-background border border-border rounded-3xl p-6 sm:p-8 text-center"
             >
               <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-6 ring-2 ring-primary/20">
                 <img src={f.image} alt={f.name} className="w-full h-full object-cover" />

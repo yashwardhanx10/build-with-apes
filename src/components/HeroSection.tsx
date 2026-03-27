@@ -9,7 +9,7 @@ const HeroSection = () => {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   return (
-    <section ref={ref} className="relative min-h-[100vh] flex flex-col justify-center overflow-hidden pt-20 pb-8">
+    <section ref={ref} className="relative min-h-[90vh] sm:min-h-[100vh] flex flex-col justify-center overflow-hidden pt-16 sm:pt-20 pb-6 sm:pb-8">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,hsl(24_95%_53%/0.12),transparent)]" />
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-primary/[0.04] blur-[150px]" />
@@ -34,7 +34,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight mb-6">
+          className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight mb-4 sm:mb-6">
           
           <span className="block">​Transform Into
 
@@ -45,7 +45,7 @@ Entrepreneur</span>
 
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.25 }}
-        className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-4 leading-relaxed">
+        className="text-base sm:text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-3 sm:mb-4 leading-relaxed">
           
           Learn, build, and grow with ambitious founders, operators, and future entrepreneurs using AI to create real businesses.
         </motion.p>
@@ -54,7 +54,7 @@ Entrepreneur</span>
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.35 }}
-          className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-10">
+          className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-6 sm:mb-10">
           
           Ten years from now, businesses will be divided into two types — those who adapted to AI, and those who didn't.{" "}
           <strong className="text-foreground">APEs exists to make sure you're in the first group.</strong>
@@ -64,18 +64,18 @@ Entrepreneur</span>
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.45 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-10 sm:mb-16">
           
           <a
             href="#pricing"
-            className="group flex items-center gap-2 bg-gradient-primary text-primary-foreground font-semibold px-8 py-4 rounded-full text-lg hover:opacity-90 transition-all glow-border">
+            className="group flex items-center gap-2 bg-gradient-primary text-primary-foreground font-semibold px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-base sm:text-lg hover:opacity-90 transition-all glow-border">
             
             Join APEs
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
           </a>
           <a
             href="#community"
-            className="flex items-center gap-2 border border-border text-foreground font-medium px-8 py-4 rounded-full text-lg hover:bg-card transition-colors">
+            className="flex items-center gap-2 border border-border text-foreground font-medium px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-base sm:text-lg hover:bg-card transition-colors">
             
             Explore Community
           </a>
@@ -85,7 +85,7 @@ Entrepreneur</span>
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.6 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 max-w-3xl mx-auto">
           
           {[
           { number: "3,000+", label: "Entrepreneurs" },
@@ -100,7 +100,7 @@ Entrepreneur</span>
             transition={{ delay: 0.7 + i * 0.1 }}
             className="text-center">
             
-              <p className="text-3xl sm:text-4xl font-bold text-gradient">{stat.number}</p>
+              <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-gradient">{stat.number}</p>
               <p className="text-sm text-muted-foreground mt-1">{stat.label}</p>
             </motion.div>
           )}

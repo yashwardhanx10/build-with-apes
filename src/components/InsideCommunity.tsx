@@ -50,17 +50,17 @@ const InsideCommunity = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-16"
         >
           <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">Inside the Community</p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 sm:mb-4">
             A peek at what's{" "}
             <span className="text-gradient">waiting inside</span>
           </h2>
           <p className="text-muted-foreground text-lg">Everything you need to build, learn, connect, and grow.</p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5">
           {features.map((f, i) => (
             <motion.div
               key={f.title}
@@ -68,9 +68,9 @@ const InsideCommunity = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.06 }}
-              className="group bg-background border border-border rounded-2xl p-7 hover:border-primary/20 transition-all"
+              className="group bg-background border border-border rounded-2xl p-5 sm:p-7 hover:border-primary/20 transition-all"
             >
-              <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/15 transition-colors">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-primary/10 flex items-center justify-center mb-4 sm:mb-5 group-hover:bg-primary/15 transition-colors">
                 <f.icon size={22} className="text-primary" />
               </div>
               <span className="text-[11px] font-bold text-primary uppercase tracking-[0.2em]">{f.tag}</span>
