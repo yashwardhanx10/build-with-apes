@@ -4,6 +4,7 @@ import WhyApesExists from "@/components/WhyApesExists";
 import InsideCommunity from "@/components/InsideCommunity";
 import PastSpeakers from "@/components/PastSpeakers";
 import MeetFounders from "@/components/MeetFounders";
+import VideoSection from "@/components/VideoSection";
 import PastWorkshops from "@/components/PastWorkshops";
 import CityMeetups from "@/components/CityMeetups";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -23,6 +24,7 @@ const Index = () => {
       <InsideCommunity />
       <PastSpeakers />
       <MeetFounders />
+      <VideoSection />
       <PastWorkshops />
       <CityMeetups />
       <TestimonialsSection />
