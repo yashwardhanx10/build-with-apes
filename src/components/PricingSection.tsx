@@ -13,10 +13,10 @@ const PricingSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-16"
         >
           <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">Membership</p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 sm:mb-4">
             Choose your <span className="text-gradient">membership</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-lg mx-auto">
@@ -24,13 +24,13 @@ const PricingSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto">
           {/* 1 Year */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-card border border-border rounded-3xl p-8"
+            className="bg-card border border-border rounded-2xl sm:rounded-3xl p-6 sm:p-8"
           >
             <h3 className="text-lg font-bold mb-2">1 Year Membership</h3>
             <p className="text-muted-foreground text-sm mb-4">Perfect for members getting started with APEs.</p>
@@ -60,7 +60,7 @@ const PricingSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="relative bg-card border-2 border-primary rounded-3xl p-8 animate-pulse-glow"
+            className="relative bg-card border-2 border-primary rounded-2xl sm:rounded-3xl p-6 sm:p-8 animate-pulse-glow"
           >
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-primary text-primary-foreground font-bold px-5 py-1.5 rounded-full flex items-center gap-1 text-lg">
               <Sparkles size={12} /> BEST VALUE
@@ -93,7 +93,7 @@ const PricingSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="bg-card border border-border rounded-3xl p-8"
+            className="bg-card border border-border rounded-2xl sm:rounded-3xl p-6 sm:p-8"
           >
             <h3 className="text-lg font-bold mb-2">5 Year Membership</h3>
             <p className="text-muted-foreground text-sm mb-4">For serious long-term builders.</p>

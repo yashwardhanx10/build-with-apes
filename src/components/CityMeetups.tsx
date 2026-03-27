@@ -19,7 +19,7 @@ const CityMeetups = () => {
           className="text-center mb-6"
         >
           <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">Past Meetups</p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 sm:mb-4">
             A look at APEs meetups{" "}
             <span className="text-gradient">across India</span>
           </h2>
@@ -28,7 +28,7 @@ const CityMeetups = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mt-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-3 mt-8 sm:mt-12">
           {meetupImages.map((item, i) => (
             <motion.div
               key={item.id}

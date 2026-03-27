@@ -120,7 +120,7 @@ const PastSpeakers = () => {
           className="text-center mb-6"
         >
           <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">Past Speakers & Mentors</p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 sm:mb-4">
             Learn from founders, operators,{" "}
             <span className="text-gradient">and AI leaders</span>
           </h2>
@@ -138,7 +138,7 @@ const PastSpeakers = () => {
           At APEs, members learn from people who have built startups, scaled businesses, raised capital, and applied AI in the real world.
         </motion.p>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5">
           {speakers.map((s, i) => (
             <motion.div
               key={s.name}
@@ -146,7 +146,7 @@ const PastSpeakers = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.04 }}
-              className="group bg-card border border-border rounded-2xl p-6 hover:border-primary/20 transition-all"
+              className="group bg-card border border-border rounded-2xl p-4 sm:p-6 hover:border-primary/20 transition-all"
             >
               <div className="flex items-start justify-between mb-4">
                 <Avatar className="w-12 h-12">

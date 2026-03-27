@@ -26,7 +26,7 @@ const WhatYouGet = () => {
           className="text-center mb-12"
         >
           <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">What You Get</p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 sm:mb-4">
             Everything inside the{" "}
             <span className="text-gradient">APEs community</span>
           </h2>

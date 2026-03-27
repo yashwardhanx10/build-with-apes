@@ -25,13 +25,13 @@ const CTAFooter = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="relative bg-card border border-primary/15 rounded-3xl p-10 sm:p-16 text-center overflow-hidden"
+            className="relative bg-card border border-primary/15 rounded-2xl sm:rounded-3xl p-8 sm:p-16 text-center overflow-hidden"
           >
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(24_95%_53%/0.08)_0%,transparent_60%)]" />
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
 
             <div className="relative z-10">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 sm:mb-4">
                 The future belongs to{" "}
                 <span className="text-gradient">AI builders.</span>
               </h2>
@@ -40,7 +40,7 @@ const CTAFooter = () => {
               </p>
               <a
                 href="#pricing"
-                className="inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground font-bold px-10 py-5 rounded-full text-lg hover:opacity-90 transition-all glow-border group"
+                className="inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground font-bold px-8 py-4 sm:px-10 sm:py-5 rounded-full text-base sm:text-lg hover:opacity-90 transition-all glow-border group"
               >
                 Join APEs
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
